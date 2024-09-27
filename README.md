@@ -1,4 +1,4 @@
-# go-reference-alignment-estimate 
+# golang-reference-alignment-estimate 
 
 - This package deals with the genome or the gene alignment and you can define a reference sequence for the same.
 -  By defining the reference sequence, you are using that sequence against the other sequence for the calculation of the alignment estimates.

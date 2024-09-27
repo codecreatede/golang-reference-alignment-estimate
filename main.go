@@ -181,13 +181,13 @@ func flagsFunc(cmd *cobra.Command, args []string) {
 	for i := 0; i < len(refMinus)-1; i++ {
 		for j := 0; j < len(refMinus[0]); j++ {
 			for k := 0; k < len(referenceSeq); k++ {
-				if string(sequenceSpec[i][j]) == "C" && string(sequenceSpec[i+1][j]) == "A" {
+				if string(refMinus[i][j]) == "C" && string(referenceSeq[k]) == "A" {
 					counterCA++
 				}
-				if string(sequenceSpec[i][j]) == "C" && string(sequenceSpec[i+1][j]) == "T" {
+				if string(refMinus[i][j]) == "C" && string(referenceSeq[k]) == "T" {
 					counterCT++
 				}
-				if string(sequenceSpec[i][j]) == "C" && string(sequenceSpec[i+1][j]) == "G" {
+				if string(refMinus[i][j]) == "C" && string(referenceSeq[k]) == "G" {
 					counterCG++
 				}
 			}
